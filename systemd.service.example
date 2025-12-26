@@ -1,0 +1,29 @@
+# Systemd 服务文件示例
+# 复制到: /etc/systemd/system/agent_framework.service
+# 然后运行:
+#   sudo systemctl daemon-reload
+#   sudo systemctl start agent_framework
+#   sudo systemctl enable agent_framework
+
+[Unit]
+Description=Agent Framework Gunicorn daemon
+Requires=agent_framework.socket
+After=network.target
+
+[Service]
+Type=notify
+User=www-data
+Group=www-data
+RuntimeDirectory=gunicorn
+WorkingDirectory=/var/www/agent_framework
+ExecStart=/var/www/agent_framework/venv/bin/gunicorn \
+          --config /var/www/agent_framework/gunicorn_config.py \
+          agent_framework.wsgi:application
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=5
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+

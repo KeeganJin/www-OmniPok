@@ -1,0 +1,98 @@
+{% extends 'framework/base.html' %}
+
+{% block title %}OmniPok Agent - 强大的智能体框架{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">OmniPok Agent</h1>
+            <p class="hero-subtitle">构建下一代智能代理系统的强大框架</p>
+            <p class="hero-description">
+                Agent Framework 是一个现代化的、高度可扩展的智能体开发框架，
+                让您能够轻松构建复杂的AI代理系统，实现自主决策和任务执行。
+            </p>
+            <div class="hero-buttons">
+                <a href="{% url 'documentation' %}" class="btn btn-primary">开始使用</a>
+                <a href="{% url 'features' %}" class="btn btn-secondary">了解更多</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features-preview">
+    <div class="container">
+        <h2 class="section-title">核心特性</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>高性能</h3>
+                <p>基于异步架构设计，支持大规模并发处理，确保系统高效运行</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <h3>易于扩展</h3>
+                <p>模块化设计，丰富的插件系统，轻松扩展和定制功能</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>安全可靠</h3>
+                <p>内置安全机制，完善的错误处理和恢复策略，保障系统稳定性</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>文档完善</h3>
+                <p>详细的中文文档和丰富的示例代码，快速上手开发</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="code-example">
+    <div class="container">
+        <h2 class="section-title">快速开始</h2>
+        <div class="code-block">
+            <pre><code># 安装 Agent Framework
+pip install agent-framework
+
+# 创建你的第一个智能体
+from agent_framework import Agent
+
+agent = Agent(
+    name="MyAgent",
+    capabilities=["reasoning", "learning", "acting"]
+)
+
+# 启动智能体
+agent.start()
+agent.execute_task("完成某个任务")
+agent.stop()</code></pre>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose">
+    <div class="container">
+        <h2 class="section-title">为什么选择 Agent Framework？</h2>
+        <div class="why-grid">
+            <div class="why-item">
+                <h3>🎯 智能决策</h3>
+                <p>内置先进的决策引擎，支持多种决策策略和算法</p>
+            </div>
+            <div class="why-item">
+                <h3>🔌 插件生态</h3>
+                <p>丰富的插件市场，轻松集成各种工具和服务</p>
+            </div>
+            <div class="why-item">
+                <h3>📊 监控分析</h3>
+                <p>强大的监控和日志系统，实时掌握系统运行状态</p>
+            </div>
+            <div class="why-item">
+                <h3>🌐 跨平台</h3>
+                <p>支持 Windows、Linux、macOS 等多个平台</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
