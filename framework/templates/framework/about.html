@@ -1,0 +1,89 @@
+{% extends 'framework/base.html' %}
+
+{% block title %}About Us - OmniPok{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>About OmniPok</h1>
+        <p>我们是谁，我们做什么</p>
+    </div>
+</section>
+
+<section class="about-content">
+    <div class="container">
+        <div class="about-section">
+            <h2>我们是谁</h2>
+            <p>
+                OmniPok 是一个由德国和中国团队成员组成的创业团队。
+                我们结合了德国严谨的工程标准和中国的快速交付能力，
+                致力于为企业提供高质量的 SaaS 咨询和 Agent 定制服务。
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2>我们的理念</h2>
+            <p>
+                我们相信自动化不应该只是技术演示，而应该真正解决企业的实际问题并带来可量化的价值。
+                因此，我们始终将以下原则放在首位：
+            </p>
+            <div class="principles-grid">
+                <div class="principle-item">
+                    <h3>实用性优先</h3>
+                    <p>我们关注的是解决实际问题，而不是追求技术的复杂性</p>
+                </div>
+                <div class="principle-item">
+                    <h3>ROI 驱动</h3>
+                    <p>每个项目都要有明确的投入产出比，确保为客户带来实际价值</p>
+                </div>
+                <div class="principle-item">
+                    <h3>可维护性</h3>
+                    <p>我们交付的不仅是代码，更是可长期维护和扩展的解决方案</p>
+                </div>
+                <div class="principle-item">
+                    <h3>企业级标准</h3>
+                    <p>安全性、稳定性和可监控性是我们的基本要求</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>我们服务的对象</h2>
+            <p>
+                我们专注于 ToB 企业客户，特别是那些：
+            </p>
+            <ul class="target-list">
+                <li><strong>Sales 团队</strong> - 需要提升销售流程效率和线索管理能力</li>
+                <li><strong>IT 部门</strong> - 寻求系统集成和自动化解决方案</li>
+                <li><strong>数字化转型团队</strong> - 希望将重复性工作自动化，释放人力做更有价值的事情</li>
+            </ul>
+        </div>
+
+        <div class="about-section">
+            <h2>我们的优势</h2>
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <h3>跨文化团队</h3>
+                    <p>德国与中国的团队成员带来不同的视角和经验，确保解决方案既严谨又实用</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>深度技术理解</h3>
+                    <p>不仅懂技术，更懂业务。我们能够将技术能力转化为业务价值</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>快速响应</h3>
+                    <p>小团队的优势是灵活性和快速响应，能够快速适应客户需求的变化</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-cta">
+            <h2>Want to learn more?</h2>
+            <p>我们期待与您探讨如何帮助您的企业实现自动化转型</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Contact Us</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+

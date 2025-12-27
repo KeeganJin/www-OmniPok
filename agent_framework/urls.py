@@ -8,7 +8,9 @@ from framework import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('features/', views.features, name='features'),
-    path('documentation/', views.documentation, name='documentation'),
+    path('services/', views.services, name='services'),
+    path('omnipok-agent/', views.omnipok_agent, name='omnipok_agent'),
+    path('about/', views.about, name='about'),
+    path('contact/', views.contact, name='contact'),
 ]
 

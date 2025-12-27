@@ -1,0 +1,129 @@
+{% extends 'framework/base.html' %}
+
+{% block title %}OmniPok-Agent - OmniPok{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>OmniPok-Agent</h1>
+        <p>企业级智能执行引擎</p>
+    </div>
+</section>
+
+<section class="product-content">
+    <div class="container">
+        <!-- 产品定义 -->
+        <div class="product-intro">
+            <h2>什么是 OmniPok-Agent？</h2>
+            <p class="product-tagline">
+                OmniPok-Agent 是我们自研的企业级 Agent 执行框架，旨在为企业提供可靠、可扩展的智能自动化底座。
+                它不仅是我们定制化 Agent 项目的技术基础，也可以作为独立的产品服务于企业的自动化需求。
+            </p>
+        </div>
+
+        <!-- 解决的问题 -->
+        <div class="product-problem">
+            <h2>它解决的问题</h2>
+            <div class="problem-grid">
+                <div class="problem-item">
+                    <h3>系统集成复杂</h3>
+                    <p>企业往往需要连接多个系统（CRM、ERP、邮件、文档等），OmniPok-Agent 提供了统一的集成框架</p>
+                </div>
+                <div class="problem-item">
+                    <h3>任务编排困难</h3>
+                    <p>复杂的业务流程需要多个步骤和决策点，框架提供了可视化的任务编排能力</p>
+                </div>
+                <div class="problem-item">
+                    <h3>缺乏监控与可追溯性</h3>
+                    <p>企业需要了解自动化的运行状态和结果，框架内置了完整的监控和日志系统</p>
+                </div>
+                <div class="problem-item">
+                    <h3>安全与权限管理</h3>
+                    <p>企业级应用必须考虑安全和权限，框架提供了细粒度的权限控制和安全机制</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 核心能力模块 -->
+        <div class="product-capabilities">
+            <h2>核心能力模块</h2>
+            <div class="capabilities-grid">
+                <div class="capability-card">
+                    <h3>Multi-Agent</h3>
+                    <p>支持多 Agent 协作，不同的 Agent 可以专注于不同的任务领域，通过协作完成复杂业务流程</p>
+                    <ul>
+                        <li>Agent 间通信与协调</li>
+                        <li>任务分配与负载均衡</li>
+                        <li>并发执行与冲突解决</li>
+                    </ul>
+                </div>
+                <div class="capability-card">
+                    <h3>Orchestration</h3>
+                    <p>强大的任务编排能力，支持复杂的工作流定义，包括条件分支、循环、异常处理等</p>
+                    <ul>
+                        <li>可视化工作流设计</li>
+                        <li>条件逻辑与分支</li>
+                        <li>异常处理与重试机制</li>
+                    </ul>
+                </div>
+                <div class="capability-card">
+                    <h3>Integrations</h3>
+                    <p>丰富的系统集成能力，支持主流 SaaS 平台和 API，轻松连接您的现有系统</p>
+                    <ul>
+                        <li>Salesforce / SAP 集成</li>
+                        <li>邮件与日历系统</li>
+                        <li>RESTful API 与 Webhook</li>
+                    </ul>
+                </div>
+                <div class="capability-card">
+                    <h3>Security & Monitoring</h3>
+                    <p>企业级的安全保障和实时监控，确保系统稳定运行和问题快速定位</p>
+                    <ul>
+                        <li>权限管理与访问控制</li>
+                        <li>数据加密与审计日志</li>
+                        <li>实时监控与告警</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 使用方式 -->
+        <div class="product-usage">
+            <h2>使用方式</h2>
+            <div class="usage-content">
+                <p>
+                    OmniPok-Agent 主要作为项目交付的技术底座。在定制化 Agent 开发项目中，
+                    我们基于 OmniPok-Agent 框架快速构建符合您需求的 Agent 解决方案。
+                </p>
+                <div class="usage-steps">
+                    <div class="usage-step">
+                        <strong>1. 需求分析</strong>
+                        <p>我们深入了解您的业务流程和自动化需求</p>
+                    </div>
+                    <div class="usage-step">
+                        <strong>2. 框架定制</strong>
+                        <p>基于 OmniPok-Agent 框架，配置和扩展所需的 Agent 能力</p>
+                    </div>
+                    <div class="usage-step">
+                        <strong>3. 开发与测试</strong>
+                        <p>开发具体的业务逻辑，并进行充分测试</p>
+                    </div>
+                    <div class="usage-step">
+                        <strong>4. 部署与交付</strong>
+                        <p>在您的环境中部署，并提供完整的文档和培训</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="product-cta">
+            <h2>Interested in OmniPok-Agent?</h2>
+            <p>让我们探讨如何利用 OmniPok-Agent 为您的企业带来自动化价值</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Get in Touch</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+

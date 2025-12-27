@@ -6,12 +6,22 @@ def index(request):
     return render(request, 'framework/index.html')
 
 
-def features(request):
-    """特性页面视图"""
-    return render(request, 'framework/features.html')
+def services(request):
+    """服务页面视图"""
+    return render(request, 'framework/services.html')
 
 
-def documentation(request):
-    """文档页面视图"""
-    return render(request, 'framework/documentation.html')
+def omnipok_agent(request):
+    """OmniPok-Agent 产品页面视图"""
+    return render(request, 'framework/omnipok_agent.html')
+
+
+def about(request):
+    """关于我们页面视图"""
+    return render(request, 'framework/about.html')
+
+
+def contact(request):
+    """联系我们页面视图"""
+    return render(request, 'framework/contact.html')
 

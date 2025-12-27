@@ -1,0 +1,131 @@
+{% extends 'framework/base.html' %}
+
+{% block title %}Services - OmniPok{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Our Services</h1>
+        <p>专业的 SaaS 咨询与 Agent 定制开发服务</p>
+    </div>
+</section>
+
+<section class="services-content">
+    <div class="container">
+        <!-- SaaS Consulting Section -->
+        <div class="service-section" id="saas-consulting">
+            <div class="service-header">
+                <h2>SaaS Consulting</h2>
+                <p class="service-subtitle">Salesforce / SAP 专业咨询服务</p>
+            </div>
+            
+            <div class="service-description">
+                <p>
+                    我们提供专业的 SaaS 系统咨询服务，帮助企业充分利用 Salesforce 和 SAP 等企业级平台的潜力。
+                    从系统评估到上线优化，我们全程陪伴您的数字化转型之旅。
+                </p>
+            </div>
+
+            <div class="service-features">
+                <div class="service-feature-card">
+                    <h3>系统评估</h3>
+                    <ul>
+                        <li>现有系统架构与功能评估</li>
+                        <li>业务流程分析与优化建议</li>
+                        <li>技术债务识别与解决方案</li>
+                        <li>ROI 评估与实施路线图规划</li>
+                    </ul>
+                </div>
+                <div class="service-feature-card">
+                    <h3>实施与集成</h3>
+                    <ul>
+                        <li>系统配置与定制开发</li>
+                        <li>第三方系统集成（API、数据同步）</li>
+                        <li>数据迁移与清洗</li>
+                        <li>用户培训与知识转移</li>
+                    </ul>
+                </div>
+                <div class="service-feature-card">
+                    <h3>上线与优化</h3>
+                    <ul>
+                        <li>上线支持与问题排查</li>
+                        <li>性能监控与优化</li>
+                        <li>持续改进建议</li>
+                        <li>运维支持与最佳实践分享</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Custom Agent Development Section -->
+        <div class="service-section" id="custom-agent">
+            <div class="service-header">
+                <h2>Custom Agent Development</h2>
+                <p class="service-subtitle">按需定制的企业级 Agent 解决方案</p>
+            </div>
+            
+            <div class="service-description">
+                <p>
+                    基于您的具体业务需求，我们设计并开发定制化的 Agent 解决方案。
+                    我们注重 ROI、稳定性与可维护性，确保每个 Agent 都能真正解决业务问题并带来实际价值。
+                </p>
+            </div>
+
+            <div class="service-highlights">
+                <div class="highlight-item">
+                    <h3>✓ 与现有系统集成</h3>
+                    <p>
+                        我们的 Agent 可以无缝集成到您现有的 SaaS 系统中（Salesforce、SAP、邮件系统等），
+                        无需大规模系统改造即可实现自动化。
+                    </p>
+                </div>
+                <div class="highlight-item">
+                    <h3>✓ 人在环（Human-in-the-loop）</h3>
+                    <p>
+                        我们设计的 Agent 系统支持关键决策点的人工审核，确保自动化流程的安全性和可控性。
+                        重要的业务决策仍然由人来把关。
+                    </p>
+                </div>
+                <div class="highlight-item">
+                    <h3>✓ 安全、权限、可监控</h3>
+                    <p>
+                        企业级的安全标准，完整的权限管理体系，以及实时监控和日志记录，
+                        确保 Agent 系统在企业环境中的安全可靠运行。
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-deliverables">
+                <h3>交付内容</h3>
+                <div class="deliverables-grid">
+                    <div class="deliverable-item">
+                        <strong>源代码与文档</strong>
+                        <p>完整的源代码、技术文档和使用手册</p>
+                    </div>
+                    <div class="deliverable-item">
+                        <strong>部署与集成</strong>
+                        <p>在您的环境中完成部署和系统集成</p>
+                    </div>
+                    <div class="deliverable-item">
+                        <strong>培训与支持</strong>
+                        <p>团队培训、运维支持和问题解答</p>
+                    </div>
+                    <div class="deliverable-item">
+                        <strong>持续优化</strong>
+                        <p>基于使用情况的持续优化建议</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="service-cta">
+            <h2>Ready to discuss your project?</h2>
+            <p>让我们详细了解您的需求，为您量身定制解决方案</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Book a Call</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+

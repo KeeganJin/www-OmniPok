@@ -1,0 +1,106 @@
+{% extends 'framework/base.html' %}
+
+{% block title %}Contact - OmniPok{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>让我们开始对话</p>
+    </div>
+</section>
+
+<section class="contact-content">
+    <div class="container">
+        <div class="contact-intro">
+            <h2>Ready to automate your business processes?</h2>
+            <p>
+                无论您是想了解我们的服务，还是已经有具体的项目需求，我们都期待与您交流。
+                请通过以下方式联系我们，或直接预约一次 30 分钟的免费咨询。
+            </p>
+        </div>
+
+        <div class="contact-methods">
+            <div class="contact-method-card">
+                <h3>📧 Email</h3>
+                <p>请发送邮件至：</p>
+                <p><a href="mailto:contact@omnipok.com">contact@omnipok.com</a></p>
+                <p class="method-note">我们会在 24 小时内回复您的邮件</p>
+            </div>
+
+            <div class="contact-method-card">
+                <h3>📞 Book a Call</h3>
+                <p>预约 30 分钟免费咨询</p>
+                <p>
+                    我们建议先通过邮件或表单联系我们，简要说明您的需求。
+                    我们会根据您的需求安排合适的团队成员与您沟通。
+                </p>
+                <a href="mailto:contact@omnipok.com?subject=Book a Call" class="btn btn-primary">Schedule a Call</a>
+            </div>
+
+            <div class="contact-method-card">
+                <h3>💬 在线咨询</h3>
+                <p>如果您有紧急需求，也可以直接通过以下方式联系：</p>
+                <p>
+                    <strong>微信 / WeChat:</strong> [请联系我们获取]</br>
+                    <strong>电话:</strong> [请联系我们获取]
+                </p>
+            </div>
+        </div>
+
+        <div class="contact-form-section">
+            <h2>或填写以下表单</h2>
+            <div class="contact-form-note">
+                <p>
+                    请简要描述您的需求或问题，我们会尽快回复。
+                    为了保护您的隐私，我们承诺不会将您的信息用于其他用途。
+                </p>
+            </div>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name">姓名 / Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">公司 / Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱 / Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">电话 / Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">感兴趣的服务 / Service of Interest</label>
+                        <select id="service" name="service">
+                            <option value="">请选择 / Please select</option>
+                            <option value="saas-consulting">SaaS Consulting</option>
+                            <option value="custom-agent">Custom Agent Development</option>
+                            <option value="omnipok-agent">OmniPok-Agent</option>
+                            <option value="other">其他 / Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">需求描述 / Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="请简要描述您的需求或问题..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="form-note">
+                <p><small>* 标记的字段为必填项</small></p>
+                <p><small>注：当前表单提交功能需要在后端实现。您也可以直接发送邮件至 contact@omnipok.com</small></p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
